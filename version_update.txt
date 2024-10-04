@@ -1,0 +1,20 @@
+Steps to version update
+
+1) Update your code with new features or bug fixes.
+2) Update the version number in setup.py (and any other relevant files).
+3) Update the changelog or README.md (if necessary).
+4) Test your package locally with pytest or other testing tools.
+5) Commit and push changes to GitHub:
+git add .
+git commit -m "Updated to version 0.2"
+git push origin main
+6) Build the new package:
+python setup.py sdist bdist_wheel
+7) Upload the new version to PyPI:
+twine upload dist/*
+8) Tag the new version in GitHub:
+git tag v0.2
+git push origin v0.2
+9) Test the new version by installing it from PyPI:
+pip install --upgrade tekdate
+10)Update documentation (if applicable).
