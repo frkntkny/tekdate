@@ -40,6 +40,7 @@ The custom date format y2024m10d04h13m59s000z+0000 is designed to prevent confus
 ## Installation
 
 ...
+pip install tekdate
 
 ### Python Installation
 
